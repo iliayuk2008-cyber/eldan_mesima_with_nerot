@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eldan_mesima_with_nerot.SecondPage">
+
+    <Grid Padding="20"
+          RowDefinitions="Auto,*">
+
+        <!-- Candles -->
+        <ScrollView Grid.Row="0"
+                    HeightRequest="300">
+
+            <FlexLayout x:Name="CandlesLayout"
+                        Wrap="Wrap"
+                        Direction="Row"
+                        JustifyContent="Center"
+                        AlignItems="Center" />
+
+        </ScrollView>
+
+        <!-- Information -->
+        <VerticalStackLayout Grid.Row="1"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="15">
+
+            <Label x:Name="ResultLabel"
+                   Text="Enter your details"
+                   FontSize="25"
+                   HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+
+    </Grid>
+
+</ContentPage>

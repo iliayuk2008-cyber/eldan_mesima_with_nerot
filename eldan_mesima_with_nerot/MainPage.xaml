@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eldan_mesima_with_nerot.MainPage">
+
+   
+    <Grid Padding="30" RowDefinitions="*,*">
+
+        <VerticalStackLayout
+        Grid.Row="0"
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Spacing="15">
+
+            <Label
+            x:Name="ResultLabel"
+            Text="Enter your details"
+            FontSize="25"
+            HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+        Grid.Row="1"
+        VerticalOptions="Center"
+        Spacing="10">
+
+            <Label Text="Enter your name:" />
+
+            <Entry
+            x:Name="NameEntry"
+            Placeholder="Your name" />
+
+            <Label Text="Enter your age:" />
+
+            <Entry
+            x:Name="AgeEntry"
+            Placeholder="Your age"
+            Keyboard="Numeric" />
+
+            <Label Text="Confirm:" />
+
+            <Slider
+            Minimum="0"
+            Maximum="1"
+            ValueChanged="Slider_ValueChanged" />
+
+        </VerticalStackLayout>
+
+    </Grid>
+    
+
+
+</ContentPage>
